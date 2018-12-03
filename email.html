@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css">
+  		img {display: block;border:none;}
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      /* main table styles region */
+      .wrapper {
+        background-color: #ffffff;
+      }
+      .table-data-web {
+        height: 50px;
+        background: #f9f9f9;
+        text-align:center;
+      }
+      .p-web {
+        margin: 0px;
+        font-size: 13px;
+        line-height: 1.4;
+        color: #000000;
+        padding-top: 8px;
+        font-family:ArialRegular,arial, sans-serif;
+      }
+      /* main table styles end region */
+			@media only screen and (max-width: 700px) {
+        table[class=mail-web]{display:none !important;}
+        #mail-web {display:none !important;}
+        #mail-mobile {display:inline-table !important;}
+      }
+			@media only screen and (min-width: 700px){
+				#mail-web {display:inline-table !important;} 
+        #mail-web:hover {background-color:aquamarine !important;}
+				#mail-mobile {display:none !important;} 
+			    *[class=hide] {
+            max-height:0;
+            display:none;
+            mso-hide:all;
+            overflow:hidden;
+            font-size:0;
+          }
+        #container-text {
+          display: none !important;
+        }
+        #container-number {
+          display: block !important;
+        }
+			}
+			@media only screen and (max-device-width: 700px){table[class=mail-web]{display:none !important;}}
+			@media only screen and (max-device-width: 700px){#mail-web{display:none !important;}}
+			@media only screen and (max-device-width: 700px){#mail-mobile{display:inline-table !important;}}
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <table cellpadding="0" cellspacing="0" width="100%" max-width="600" class="wrapper">
+    <tr>
+      <td class="table-data-web">
+          <p class="p-web"></p>
+      </td>
+      <!-- <td>
+        <table cellpadding="0" cellspacing="0" width="100%" max-width="600" id="mail-web">
+          <tr>
+            <td>
+              
+            </td>
+          </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" width="100%" max-width="320" id="mail-mobile">
+            <tr>
+              <td>
+                
+              </td>
+            </tr>
+          </table>
+      </td> -->
+    </tr>
+  </table>
+</body>
+</html>
